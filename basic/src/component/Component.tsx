@@ -1,4 +1,5 @@
 import React from 'react'
+import SignInContainer from './example/SignInContainer';
 
 export default function Component() {
     //  함수형 컴포넌트의 return
@@ -14,6 +15,24 @@ export default function Component() {
         <>
             <div>Component</div>
             <div>Component</div>
+            <JsxComponent/>
+        </>
+    );
+}
+
+function JsxComponent () {
+
+    // JSX (TSX)의 규칙
+    // 1. 반드시 하나의 요소를 반환 (<div> 요소 혹은 <> 요소)
+    // 2. 모든 태그 닫기
+    // 3. 속성들을 JSX로 지정되어있는 이름으로 사용해야함 (lowerCamelCase)
+    return(
+        <>
+        <h1>첫번째 페이지입니다.</h1>
+        <div>
+            <img src="https://media.tenor.com/ite95WxaCOwAAAAe/sponge-bob-patrick.png" className="image-box"/>
+        </div>
+        <SignInContainer />
         </>
     );
 }
