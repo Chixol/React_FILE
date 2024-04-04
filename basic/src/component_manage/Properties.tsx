@@ -5,13 +5,14 @@ import React from 'react'
 // - 부모 컴포넌트에서는 HTML과 동일한 방식 (속성명 = 데이터)로 전달
 // - 자식 컴포넌트에서는 JS의 매개변수 방식으로 받음
 // - 전달할 수 있는 데이터는 JS로 표현할 수 있는 모든 형태
+// - 컴포넌트가 리렌더링되는 기준
 interface Props {
     title: String;
     content: String;
     nickname?: String;
 }
 
-function Child({title, content, nickname = '비공개'}: Props /* 방법4.  짧게 쓰는 놈(대중적)*/) {  //props: Props 이거 매개변수에 넣으면 방법 1,2,3
+function Child({title, content, nickname = '비공개'}: Props /* 방법4.  짧게 쓰는 놈(대중적)*/) {  //props: Props 이거 매개변수에 넣으면 방법 1,2,3  // (='비공개')는 기본값 지정
 
     // 방법 1. 무식이
     // props = {

@@ -5,7 +5,8 @@ import Sample from './component/Sample';
 import CurlyBraces from './component/example/CurlyBraces';
 import Properties from './component_manage/Properties';
 import InputBox from './component/example/InputBox';
-import SignInContainer from './component/example/SignInContainer';
+import SignInContainer from './component_manage/example/SignInContainer';
+// import SignInContainer from './component/example/SignInContainer';
 
 // JSX / TSX :
 // JSX (JavaScript XML) / TSX (TypeScript XML)
