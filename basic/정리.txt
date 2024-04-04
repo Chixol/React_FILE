@@ -1,0 +1,5 @@
+보는 순서
+1. index.tsx 파일
+2. App.tsx 파일
+3. component 폴더에 component.tsx 파일
+4. example 폴더에 inputbox, signincontainer 파일

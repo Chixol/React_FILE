@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Component from './component/Component';
 import Sample from './component/Sample';
+import CurlyBraces from './component/example/CurlyBraces';
 
 // JSX / TSX :
 // JSX (JavaScript XML) / TSX (TypeScript XML)
@@ -72,8 +73,9 @@ function App() {
     <>
       {/* <ClassComponent />
       <FunctionComponent /> */}
-      <Component />
-      <Sample />
+      {/* <Component />
+      <Sample /> */}
+      <CurlyBraces />
     </>
   );
 }
