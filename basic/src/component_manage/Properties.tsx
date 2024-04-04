@@ -8,29 +8,39 @@ import React from 'react'
 interface Props {
     title: String;
     content: String;
+    nickname?: String;
 }
 
-function Child(props: Props) {
+function Child({title, content, nickname = '비공개'}: Props /* 방법4.  짧게 쓰는 놈(대중적)*/) {  //props: Props 이거 매개변수에 넣으면 방법 1,2,3
 
+    // 방법 1. 무식이
     // props = {
     //     title = '제목1',
     //     content = '내용1'
     // }
 
+    // 방법 2. 조금 배운놈
+    // const title = props.title;
+    // const content = props.content;
+
+    // 방법 3. 조금 더 배운놈
+    // const {title, content} = props;
+
     return(
         <div>
-            <h1>{props.title}</h1>
-            <p>{props.content}</p>
+            <h1>{title}</h1>
+            <h4>{nickname}</h4>
+            <p>{content}</p>
         </div>
     )
 }
 
 export default function Properties() {
-  return (
-    <>
-        <Child title='제목 1' content='내용1' />
-        <Child />
-        <Child />
-    </>
-  )
+    return (
+        <>
+            <Child title='제목 1' content='내용1' nickname='로제' />
+            <Child title='국제인구 이동' content='보도자료' />
+            <Child title='외국인 지역별 통계' content='제가 못찾는 걸까요?' />
+        </>
+    )
 }

@@ -3,6 +3,9 @@ import './App.css';
 import Component from './component/Component';
 import Sample from './component/Sample';
 import CurlyBraces from './component/example/CurlyBraces';
+import Properties from './component_manage/Properties';
+import InputBox from './component/example/InputBox';
+import SignInContainer from './component/example/SignInContainer';
 
 // JSX / TSX :
 // JSX (JavaScript XML) / TSX (TypeScript XML)
@@ -75,7 +78,9 @@ function App() {
       <FunctionComponent /> */}
       {/* <Component />
       <Sample /> */}
-      <CurlyBraces />
+      <SignInContainer />
+      {/* <CurlyBraces /> */}
+      {/* <Properties /> */}
     </>
   );
 }
