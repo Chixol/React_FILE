@@ -1,13 +1,13 @@
 import React from 'react'
 
-interface Props {
+export interface InputBoxProps {
     label: string;
     type: 'text' | 'password';
     placeholder: string;
     buttonTitle?: string;
 }
 
-export default function InputBox({label, type, placeholder, buttonTitle}: Props) {
+export default function InputBox({label, type, placeholder, buttonTitle}: InputBoxProps) {
 
     return (
         <div className="input-box">
