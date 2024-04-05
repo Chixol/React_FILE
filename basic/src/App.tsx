@@ -7,6 +7,7 @@ import Properties from './component_manage/Properties';
 import InputBox from './component/example/InputBox';
 import SignInContainer from './component_manage/example/SignInContainer';
 import ConditionalRendering from './component_manage/ConditionalRendering';
+import ListRendering from './component_manage/ListRendering';
 // import SignInContainer from './component/example/SignInContainer';
 
 // JSX / TSX :
@@ -83,7 +84,8 @@ function App() {
       {/* <SignInContainer /> */}
       {/* <CurlyBraces /> */}
       {/* <Properties /> */}
-      <ConditionalRendering />
+      {/* <ConditionalRendering /> */}
+      <ListRendering />
     </>
   );
 }
