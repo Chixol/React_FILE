@@ -2,9 +2,9 @@ import React from 'react'
 
 interface Props {
     label: string;
-    type: string;
+    type: 'text' | 'password';
     placeholder: string;
-    buttonTitle: string;
+    buttonTitle?: string;
 }
 
 export default function InputBox({label, type, placeholder, buttonTitle}: Props) {

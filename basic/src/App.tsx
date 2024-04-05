@@ -6,6 +6,7 @@ import CurlyBraces from './component/example/CurlyBraces';
 import Properties from './component_manage/Properties';
 import InputBox from './component/example/InputBox';
 import SignInContainer from './component_manage/example/SignInContainer';
+import ConditionalRendering from './component_manage/ConditionalRendering';
 // import SignInContainer from './component/example/SignInContainer';
 
 // JSX / TSX :
@@ -79,9 +80,10 @@ function App() {
       <FunctionComponent /> */}
       {/* <Component />
       <Sample /> */}
-      <SignInContainer />
+      {/* <SignInContainer /> */}
       {/* <CurlyBraces /> */}
       {/* <Properties /> */}
+      <ConditionalRendering />
     </>
   );
 }
