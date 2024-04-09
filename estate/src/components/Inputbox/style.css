@@ -1,0 +1,95 @@
+
+.input {
+    flex-grow: 1;
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-radius: 6px;
+    outline: none;
+    padding: 8px 16px;
+    
+    background-color: white;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%;
+
+    color: #232D42;
+}
+
+.input::placeholder {
+    color: #8A98A6;
+}
+
+
+.sns-container-title {
+    color: rgba(138, 146, 166, 1);
+}
+
+.sns-button-container {
+    display: flex;
+    gap: 24px;
+}
+
+.input-box {
+    width: 100%;
+}
+
+.input-label {
+    color: #8A98A6;
+}
+
+.input-content-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.input-primary-button {
+    box-sizing: border-box;
+    width: 110px;
+    padding: 8px 0px;
+    border-radius: 6px;
+
+    background-color: rgba(58, 87, 232, 0.2);
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%;
+
+    color: rgba(45, 66, 178, 1);
+
+    text-align: center;
+}
+
+.input-primary-button:hover {
+    cursor: pointer;
+}
+
+.input-disable-button {
+    box-sizing: border-box;
+    width: 110px;
+    padding: 8px 0px;
+    border-radius: 6px;
+
+    background-color: rgba(238, 238, 238, 1);
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%;
+
+    color: rgba(138, 146, 166, 1);
+
+    text-align: center;
+}
+
+.input-message {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+

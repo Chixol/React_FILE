@@ -1,46 +1,29 @@
-# Getting Started with Create React App
+# estate 웹 서비스
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 시스템 개요
 
-## Available Scripts
+### 목표 및 목적
+estate 웹 서비스의 주요 목표는 전국 오피스텔의 매매, 전세, 월세의 변화 추세를 효율적으로 확인할 수 있도록 도움을 주는 시스템
 
-In the project directory, you can run:
+### 구성 요소
+- Front-end : 로그인, 회원가입, 지역 평균, 각종 지표 확인, Q&A 유저 인터페이스를 제공하는 서버
+- Back-end : 보안 처리, 권한 처리, 데이터 처리를 담당하는 서버
+- Database : 회원 정보, 전국 오피스텔 매매 / 전세 / 월세 및 그에 따른 지표 정보, Q&A 게시물 정보를 저장하는 서버
 
-### `npm start`
+### 기능 요약
+- 회원 관리 : 회원 로그인, 회원 가입, SNS (kakao, naver)로그인 기능 제공
+- 지역별 평균 데이터 제공 : 지역별 매매, 전제, 월세, 평균 데이터 제공
+- 지역별 지표 데이터 제공 : 지역별 매매, 전세, 월세 대비 지표 데이터 제공
+- Q&A : 서비스와 관련된 질문 및 답변 서비스 제공
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### 해당 프로젝트는 Front-end 애플리케이션
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 폴더 구조
+ **src**
+┣ **assets**: 각종 리소스
+┣ **components** : 최소 단위 공통 컴포넌트
+┣ **content** : 공통 상수
+┣ **layouts** : 공통 레이아웃 컴포넌트
+┣ **types** : 공통 타
+┣ **utils** : 공통 기능 함수
+┗ **views** : 화면단위 컴포넌트

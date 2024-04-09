@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.primary-button {
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+
+  padding: 8px 24px;
+
+  background-color: rgba(28, 87, 232, 1);
+  border-radius: 6px;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.second-button {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 8px 24px;
+
+  background-color: rgba(58 , 87, 232, 0.2);
+  border-radius: 6px;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+
+  color: rgba(45, 66, 178, 1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.second-button:hover {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.disable-button {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 8px 24px;
+
+  background-color: rgba(138, 146, 166, 1);
+  border-radius: 6px;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+
+  color: rgba(255, 255, 255, 1);
+}
+
+.primary-button:hover {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.sns-button {
+  width: 56px;
+  height: 56px;
+  border-radius: 56px;
+}
+
+.sns-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.text-link {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+  color: rgba(113, 113, 113, 1);
+}
+
+.text-link:hover {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.short-divider {
+  width: 64px;
+  border: 1px solid rgba(238, 238, 238, 1);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.primary {
+  color: #3a57e8;
+}
+
+.error {
+  color: #ff5540;
 }
