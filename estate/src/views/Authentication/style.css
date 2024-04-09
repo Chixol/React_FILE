@@ -1,0 +1,65 @@
+#authentication-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    min-height: 1024px;
+}
+
+.authentication-image-box {
+    min-width: 830px;
+    background-image: url();
+    background-size: cover;
+}
+
+.authentication-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    min-width: 610px;
+}
+
+.authentication-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 380px;
+    height: 523px;
+}
+
+.authentication-title {
+    color: rgba(64, 64, 64, 1);
+}
+
+.authentication-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+}
+
+.authentication-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    width: 100%;
+}
+
+.authentication-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    width: 100%;
+}
+
+.authentication-sns-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
