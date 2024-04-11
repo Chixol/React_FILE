@@ -7,7 +7,6 @@
 
 .authentication-image-box {
     min-width: 830px;
-    background-image: url();
     background-size: cover;
 }
 
@@ -15,6 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
     flex-grow: 1;
     min-width: 610px;
 }
@@ -24,6 +24,7 @@
     flex-direction: column;
     align-items: center;
     gap: 24px;
+
     width: 380px;
     height: 523px;
 }
@@ -37,6 +38,7 @@
     flex-direction: column;
     align-items: center;
     gap: 24px;
+
     width: 100%;
 }
 

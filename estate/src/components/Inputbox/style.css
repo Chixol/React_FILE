@@ -1,12 +1,11 @@
-
 .input {
     flex-grow: 1;
     border: 1px solid rgba(238, 238, 238, 1);
     border-radius: 6px;
     outline: none;
     padding: 8px 16px;
-    
-    background-color: white;
+
+    background-color: rgba(255, 255, 255, 1);
 
     font-family: Inter;
     font-size: 16px;
@@ -14,13 +13,12 @@
     font-weight: 400;
     line-height: 175%;
 
-    color: #232D42;
+    color: rgba(35, 45, 66, 1);
 }
 
 .input::placeholder {
-    color: #8A98A6;
+    color: rgba(138, 146, 166, 1);
 }
-
 
 .sns-container-title {
     color: rgba(138, 146, 166, 1);
@@ -36,14 +34,15 @@
 }
 
 .input-label {
-    color: #8A98A6;
+    color: rgba(138, 146, 166, 1);
 }
 
-.input-content-box {
+.input-content-box{
     display: flex;
     gap: 10px;
+
     margin-top: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .input-primary-button {
@@ -92,4 +91,3 @@
     font-weight: 400;
     line-height: normal;
 }
-
