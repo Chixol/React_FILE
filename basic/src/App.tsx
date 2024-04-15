@@ -11,6 +11,7 @@ import SignUpContainer from './component_manage/example/SignUpContainer';
 import EventComponent from './interaction/EventComponent';
 import StateComponent from './interaction/StateComponent';
 import ForwardingStateComponent from './interaction/ForwardingStateComponent';
+import HookComponent1 from './hook/HookComponent1';
 // import SignInContainer from './component/example/SignInContainer';
 
 // JSX / TSX :
@@ -91,7 +92,8 @@ function App() {
       {/* <ListRendering /> */}
       {/* <EventComponent /> */}
       {/* <StateComponent /> */}
-      <ForwardingStateComponent />
+      {/* <ForwardingStateComponent /> */}
+      <HookComponent1 />
     </>
   );
 }
