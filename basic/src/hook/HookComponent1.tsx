@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 // Hook 함수 :
 // - react에서 컴포넌트의 상태와 생명주기에 따른 기능을 수행할 수 있도록 해주는 특별한 함수
@@ -14,15 +14,66 @@ import React, { useEffect } from 'react'
 
 
 export default function HookComponent1() {
+
+    const [count, setCount] = useState<number>(0);
+    const [flag, setFlag] = useState<boolean>(false);
+
+    const addCount = () => {
+        setCount(count + 1);
+    };
+
+    const reverseFlag = () => {
+        setFlag(!flag);
+    };
+
     // useEffect :
     // - 컴포넌트의 생명주시에 따라 특정 함수를 수행하도록 하는 훅 함수
     // - useEffect(실행할 함수, 스코프할 상태 배열);
+    // - 개발자 모드에서는 마운트 - 언마운트가 한번 실행되면서 테스트 후 다시 정상 실행
 
+    // 컴포넌트 마운트 할 때에만 실행
     useEffect(() => {
-        console.log('useEffect')
-    })
+        // console.log('useEffect')
+    }, []);
+
+    // 스코프할 상태 배열을 지정하지 않으면 모든 상태가 변경될 때 마다 실행됨
+    useEffect(() => {
+        // 스코프할 상태 배열을 지정하지 않은 effect에서 상태를 변경하면 무한 실행됨
+        // setFlag(!flag);
+
+        // console.log('useEffect')
+    });
+
+    //스코프할 상태 배열에 상태를 지정하면 지정한 상태가 변경될 때마다 실행됨
+    useEffect(() => {
+        // 스코프할 상태 배열에 지정한 상태를 해당 effect에서 변경하면 무한 실행됨
+        // console.log(count + 1);
+        // console.log('count가 변경됨');
+        // console.log(count);
+    }, [count]);
+
+    useEffect (() => {
+        // console.log('count 또는 flag가 변경됨');
+        // console.log(count);
+        // console.log(flag);
+    }, [count, flag]);
+
+    const SubComponent = () => {
+
+        useEffect (() => {
+            console.log('mount시 실행');
+            return () => {
+                console.log('unmount 시 실행')
+            }
+        }, []);
+
+        return <h1>SubComponent</h1>
+    }
 
   return (
-    <div>HookComponent1</div>
+    <div>{flag && count} 
+    {flag && <SubComponent />}
+    <button onClick={addCount}>+</button>
+    <button onClick={reverseFlag}>!</button></div>
   )
 }
