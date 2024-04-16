@@ -13,6 +13,7 @@ import StateComponent from './interaction/StateComponent';
 import ForwardingStateComponent from './interaction/ForwardingStateComponent';
 import HookComponent1 from './hook/HookComponent1';
 import HookComponent2 from './hook/HookComponent2';
+import CustomHook from './hook/CustomHook';
 // import SignInContainer from './component/example/SignInContainer';
 
 // JSX / TSX :
@@ -95,7 +96,8 @@ function App() {
       {/* <StateComponent /> */}
       {/* <ForwardingStateComponent /> */}
       {/* <HookComponent1 /> */}
-      <HookComponent2 />
+      {/* <HookComponent2 /> */}
+      <CustomHook />
     </>
   );
 }
