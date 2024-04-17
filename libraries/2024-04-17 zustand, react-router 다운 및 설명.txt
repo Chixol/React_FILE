@@ -1,6 +1,9 @@
 zustand / react-router
 
 react-router : 싱글페이지 이동의 개념 = url모시깽
+npm i react-router - 터미널 입력
+8 vulnerabilities (2 moderate, 6 high) = 에러 아님 그냥 무시
+
 
 npm/home - node기반 패키지 매니저
 zustand 검색(곰탱이 선택)
