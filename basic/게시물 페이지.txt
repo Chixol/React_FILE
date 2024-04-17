@@ -1,0 +1,61 @@
+107 게시물
+
+한 페이지 게시물 5개씩 보여줌
+페이지네이션을 한 섹션당 10개를 보여줌
+
+총 페이지 수 : 22 => 107/5 = 21.4 ==> 22개 페이지
+totalPageCount = boardCount / 5 
+if boardCount % 5 ! ==0) totalPageCount++;
+
+totalCount = Math.floor((boardCount - 1)/5)
+
+
+================================================
+107 게시물
+
+페이지네이션을 한 섹션당 10개를 보여줌
+
+총 섹션 수 : 3
+
+totalPageCount = Math.floor((boardCount - 1)/5) + 1
+totalSectionCount = Math.floor((totalPageCount - 1) / (5 * 10) ) + 1
+
+================================================
+[a0, a2, a3, a4, a5, a6, ..., a104, a105, a106]
+1번째 페이지 : [a0 ~ a4]
+2번째 페이지 : [a5 ~ a9]
+3번째 페이지 : [a10 ~ a14]
+...
+21번째 페이지 : [a100 ~ a104]
+22번째 페이지 : [a105, a106]
+
+1	0	4	5(n-1)
+2	5	9	5n-1
+3	10	14	
+4	15	19
+
+currentPageStart = 5 * (page -1)
+currnetPageEnd = 5 *page -1
+
+viewList = [];
+for (index = currentPageStart ; index <= currnetPageEnd; index++ )
+  if (index >= boardList.length) break;
+  viewList.push(boardList[index])
+
+==============================================
+			
+1	1	10	10n-9	10n
+2	11	20	10n-9
+3	21	30
+4	31	40
+
+currentSectionStart = 10*section-9
+currentSectionEnd = 10*section
+
+viewPageList = [];
+for (index = currentSectionStartl; index <= currentSectionEnd; ++)
+  if (totalPage < index) break;
+  viewPageList.push(index)
+
+
+
