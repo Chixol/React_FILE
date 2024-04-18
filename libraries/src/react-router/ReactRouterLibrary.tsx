@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 
 // react-router 패키지 (라이브러리) :
 // - react의 SPA(Single Page Application)에서 라우팅을 구현하기 위한 라이브러리
@@ -25,10 +26,39 @@ import React from 'react'
 // http://localhost:3000
 // http://localhost:3000/router
 export default function ReactRouterLibrary() {
+
+    // - a 요소로 페이지 전환을 하게 되면 새로운 요청을 보내게되어 반드시 페이지가 새로고침 됨
+    // - 페이지가 새로고쳐지면 상태유지가 안됨
+    
+    // <Link> :
+    // - 사용자가 해당 웹 애플리케이션 내에서 다른 페이지로 이동할 수 있도록 하는 컴포넌트
+    // - a 요소의 href로 페이지 전환을 하게 되면 새로운 페이지로 전향되는 반면 <Link>는 새로고침을 하지 않고 URL만 변경
+    // - 다른 웹 애플리케이션으로 이동하는 작업은 <Link>로 수행하지 않음
+    // - 해당 <Link> 컴포넌트를 클릭했을 때 다른 작업을 같이 수행하고자 한다면 그 작업이 정상적으로 수행되지 않음
+    // - 페이지 이동 전에 특정 작업 결과에 따라 이동하고 싶으면 <Link> 컴포넌트를 사용하지 않음
+    const onLinkClick = () => {
+        alert('클릭!');
+    }
+
+    // useNavigate() :
+    // - Navigator 함수를 반환하는 훅 함수
+    // - Navigator 함수는 특정 조건에 따라서 URL을 변경하고자 할 때 사용할 수 있음
+    const navigator = useNavigate();
+    const [count, setCount] = useState<number>(0);
+    const onButtonClick = () => {
+        if (count === 10) navigator('/zustand');
+        setCount(count + 1);
+    }
+
     return (
         <div>
             ReactRouterLibrary
-            <a href='http://localhost:3000/zustand'>Zustand로!</a>
+            {/* <a href='http://localhost:3000/zustand'>Zustand로!</a> */}
+            <Link to='/zustand' onClick={onLinkClick}>Zustand로!</Link>
+            <div>
+                <h4>{count}</h4>
+                <button onClick={onButtonClick}>버튼</button>
+            </div>
         </div>
     )
 }
