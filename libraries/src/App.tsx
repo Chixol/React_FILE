@@ -16,7 +16,7 @@ function App() {
         {/* router 기본 값으로 주소를 묶기 (localhost:3000/router) */}
         <Route path='/router'element={<Layout />} >
           <Route index element={<ReactRouterLibrary />} />
-          <Route path='page1' element={<ReactRouterPage1 />} />
+          <Route path='page1/:value' element={<ReactRouterPage1 />} />
           <Route path='page2' element={<ReactRouterPage2 />} />
         </ Route>
         <Route path='/zustand' element={<ZustandLibrary />} />
